@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--css-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>Products</title>
+
+  <link rel="icon" type="image/png" href="./assets/img/logo.png">
+</head>
+<body>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+     
+  
+    
+    </style>
+
+    <div class = "row">
+        <div class = "col-1 filters">
+            <!--Filters-->
+            <div class="search">
+            <input type="text" id="search-input" oninput="filterProducts()" placeholder="  Search ...">
+            <span id="clear-button" onclick="clearSearch()"><i class='bx bx-x'></i></span>
+            </div>
+
+            <ul id="category-list">
+              <!-- Category items will be dynamically added here -->
+            </ul>
+            <!--Filter-end-->
+        </div>
+
+    <!--stores-->
+        <div class=" col-2 stores">
+            <ul id="product-list">
+              <!-- Product items will be dynamically added here -->
+            </ul>
+            <!--stores-end-->
+        
+            <div id="pagination"></div>
+        </div>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+
+</body>
+</html>
